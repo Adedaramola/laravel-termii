@@ -17,7 +17,7 @@ class TermiiServiceProvider extends ServiceProvider
             key: 'services',
         );
     }
-    
+
     public function register(): void
     {
         $this->app->singleton(

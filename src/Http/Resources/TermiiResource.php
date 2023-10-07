@@ -10,5 +10,6 @@ abstract class TermiiResource
 {
     public function __construct(
         protected readonly TermiiClientContract $client,
-    ) {}
+    ) {
+    }
 }

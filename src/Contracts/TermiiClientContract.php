@@ -6,5 +6,4 @@ namespace Adedaramola\Termii\Contracts;
 
 interface TermiiClientContract
 {
-    
 }

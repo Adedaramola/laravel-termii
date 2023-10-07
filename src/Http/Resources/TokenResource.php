@@ -10,6 +10,6 @@ class TokenResource extends TermiiResource
 {
     public function sendToken(SendTokenRequest $request)
     {
-        
+
     }
 }

@@ -11,8 +11,9 @@ class TermiiClient implements TermiiClientContract
 {
     public function __construct(
         protected readonly string $url,
-        protected readonly string $apiKey, 
-    ) {}
+        protected readonly string $apiKey,
+    ) {
+    }
 
     public function token(): TokenResource
     {

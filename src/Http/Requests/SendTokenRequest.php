@@ -19,7 +19,8 @@ class SendTokenRequest
         public readonly int $pinLength,
         public readonly string $pinPlaceholder,
         public readonly string $messageText,
-    ) {}
+    ) {
+    }
 
     public function toArray(): array
     {

@@ -17,7 +17,7 @@ trait CanSendRequest
         $response = $this->buildRequest()->send(
             method: $method->value,
             url: $uri,
-            options: array_merge($options,[
+            options: array_merge($options, [
                 'api_key' => $this->apiKey,
             ]),
         );
