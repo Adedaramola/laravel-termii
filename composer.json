@@ -1,0 +1,54 @@
+{
+    "name": "adedaramola/laravel-termii",
+    "description": "A Laravel Package to work with Termii API",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "termii",
+        "laravel-termii",
+        "php"
+    ],
+    "homepage": "https://github.com/adedaramola/laravel-termii",
+    "autoload": {
+        "psr-4": {
+            "Adedaramola\\Termii\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adedaramola Adetimehin",
+            "email": "adedaramolaadetimehin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^10.26",
+        "illuminate/http": "^10.26",
+        "illuminate/support": "^10.26"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.8",
+        "laravel/pint": "^1.13",
+        "phpunit/phpunit": "^10.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adedaramola\\Termii\\Providers\\TermiiServiceProvider"
+            ],
+            "aliases": {
+                "Termii": "Adedaramola\\Termii\\Facades\\Termii"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
