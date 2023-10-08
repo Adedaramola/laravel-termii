@@ -33,7 +33,7 @@ trait CanSendRequest
     {
         return Http::baseUrl($this->url)
             ->timeout(15)
-            ->withUserAgent('Adedaramola/Laravel-Termii')
+            ->withUserAgent('Adedaramola_Laravel_Termii_Sdk')
             ->asJson()
             ->acceptJson();
     }

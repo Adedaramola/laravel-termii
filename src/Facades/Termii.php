@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Adedaramola\Termii\Facades;
 
 use Adedaramola\Termii\Contracts\TermiiClientContract;
+use Illuminate\Support\Facades\Facade;
 
-class Termii extends Facades
+class Termii extends Facade
 {
-    public function getFacadeAccessor(): string
+    protected static function getFacadeAccessor(): string
     {
         return TermiiClientContract::class;
     }
