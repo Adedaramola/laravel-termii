@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "illuminate/contracts": "*"
+        "illuminate/contracts": "^9.25|^10.0"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.8",
