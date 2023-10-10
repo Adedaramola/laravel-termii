@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Adedaramola\Termii\Http;
 
-use Adedaramola\Termii\Concerns\CanSendRequest;
 use Adedaramola\Termii\Contracts\TermiiClientContract;
 use Adedaramola\Termii\Enums\Method;
 use Adedaramola\Termii\Exceptions\TermiiException;
@@ -15,8 +14,6 @@ use Illuminate\Support\Facades\Http;
 
 class TermiiClient implements TermiiClientContract
 {
-    use CanSendRequest;
-
     public function __construct(
         protected readonly string $url,
         protected readonly string $apiKey,
